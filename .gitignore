@@ -1,0 +1,38 @@
+# Environment variables (API keys)
+.env
+
+# API response cache (large, regenerable)
+data/cache/
+*.json.cache
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Results (optional - comment out if you want to track results)
+results/raw/
+results/metrics/
+results/figures/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
