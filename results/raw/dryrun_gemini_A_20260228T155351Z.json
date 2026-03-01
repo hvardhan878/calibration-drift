@@ -1,0 +1,268 @@
+{
+  "metadata": {
+    "model_key": "gemini",
+    "model_string": "google/gemini-3.1-pro-preview",
+    "condition": "A",
+    "question_count": 15,
+    "temperature": 0.0,
+    "timestamp_utc": "2026-02-28T15:53:51.069566+00:00",
+    "git_commit": "8b2da6058daf0542487382623e4c5e6479cb52bd"
+  },
+  "results": [
+    {
+      "question_id": "fact_001",
+      "domain": "factual",
+      "condition": "A",
+      "model": "gemini",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "The capital of Australia is Canberra. \n\nAnswer: Canberra | Confidence: 100%",
+          "extracted_confidence": 1.0,
+          "extracted_answer": "Canberra",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "Canberra"
+    },
+    {
+      "question_id": "fact_002",
+      "domain": "factual",
+      "condition": "A",
+      "model": "gemini",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "The capital of Canada is Ottawa.\n\nAnswer: Ottawa | Confidence: 100%",
+          "extracted_confidence": 1.0,
+          "extracted_answer": "Ottawa",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "Ottawa"
+    },
+    {
+      "question_id": "fact_003",
+      "domain": "factual",
+      "condition": "A",
+      "model": "gemini",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "The capital of Brazil is Bras\u00edlia. \n\nAnswer: Bras\u00edlia | Confidence: 100%",
+          "extracted_confidence": 1.0,
+          "extracted_answer": "Bras\u00edlia",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "Bras\u00edlia"
+    },
+    {
+      "question_id": "fact_004",
+      "domain": "factual",
+      "condition": "A",
+      "model": "gemini",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "The capital of South Africa that serves as the seat of the national legislature is Cape Town. \n\nAnswer: Cape Town | Confidence: 100%",
+          "extracted_confidence": 1.0,
+          "extracted_answer": "Cape Town",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "Cape Town"
+    },
+    {
+      "question_id": "fact_005",
+      "domain": "factual",
+      "condition": "A",
+      "model": "gemini",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "The capital of Myanmar is Naypyidaw.\n\nAnswer: Naypyidaw | Confidence: 100%",
+          "extracted_confidence": 1.0,
+          "extracted_answer": "Naypyidaw",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "Naypyidaw"
+    },
+    {
+      "question_id": "tech_001",
+      "domain": "technical",
+      "condition": "A",
+      "model": "gemini",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "The time complexity of binary search on a sorted array of n elements is **O(log n)**. \n\nThis is because binary search works by repeatedly dividing the search interval in half. In the worst-case scenario, the algorithm will halve the array $\\log_2(n)$ times until it either finds the target element or the search space is reduced to zero. \n\nAnswer: O(log n) | Confidence: 100%",
+          "extracted_confidence": 1.0,
+          "extracted_answer": "O(log n)",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "O(log n)"
+    },
+    {
+      "question_id": "tech_002",
+      "domain": "technical",
+      "condition": "A",
+      "model": "gemini",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "The average-case time complexity of quicksort is O(n log n). \n\nAnswer: O(n log n) | Confidence: 100%",
+          "extracted_confidence": 1.0,
+          "extracted_answer": "O(n log n)",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "O(n log n)"
+    },
+    {
+      "question_id": "tech_003",
+      "domain": "technical",
+      "condition": "A",
+      "model": "gemini",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "The average-case time complexity of inserting an element into a hash table is **O(1)**, also known as constant time. \n\nThis assumes that the hash table uses a good hash function that distributes the keys uniformly across the available buckets, keeping collisions to a minimum. (Note that in the worst-case scenario, such as when many keys hash to the same bucket and cause severe collisions, the time complexity can degrade to O(n)).\n\nAnswer: O(1) | Confidence: 100%",
+          "extracted_confidence": 1.0,
+          "extracted_answer": "O(1)",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "O(1)"
+    },
+    {
+      "question_id": "tech_004",
+      "domain": "technical",
+      "condition": "A",
+      "model": "gemini",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "The time complexity of Dijkstra's algorithm using a binary heap is **O((V + E) log V)**, where **V** is the number of vertices and **E** is the number of edges in the graph. \n\nHere is the breakdown of the complexity:\n* **Extracting the minimum distance:** It takes O(log V) time to extract the minimum element from the binary heap. Since this operation is performed once for each vertex, it takes O(V log V) time in total.\n* **Updating the distances (Decrease-Key):** It takes O(log V) time to update a value in the binary heap. In the worst case, this operation is performed for every edge, taking O(E log V) time in total.\n\nCombining these gives O((V + E) log V). For a connected graph where E \u2265 V - 1, this is often simplified to **O(E log V)**.\n\nAnswer: O((V + E) log V) | Confidence: 100%",
+          "extracted_confidence": 1.0,
+          "extracted_answer": "O((V + E) log V)",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "O((V + E) log V)"
+    },
+    {
+      "question_id": "tech_005",
+      "domain": "technical",
+      "condition": "A",
+      "model": "gemini",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "The time complexity of the Floyd-Warshall algorithm is **O(V\u00b3)**, where *V* is the number of vertices in the graph. This is because the algorithm uses three nested loops, each iterating over all the vertices to compute the shortest paths between all pairs of nodes.\n\nAnswer: O(V^3) | Confidence: 100%",
+          "extracted_confidence": 1.0,
+          "extracted_answer": "O(V^3)",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "O(V^3)"
+    },
+    {
+      "question_id": "open_001",
+      "domain": "openended",
+      "condition": "A",
+      "model": "gemini",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "The choice between microservices and monolithic architectures involves balancing simplicity and operational overhead against scalability and flexibility. Here are the main trade-offs:\n\n**1. Complexity vs. Simplicity**\n*   **Monolith:** Simpler to develop, test, and deploy initially because everything resides in a single codebase. However, as the application grows, the codebase can become highly coupled and difficult to maintain.\n*   **Microservices:** Introduces significant distributed system complexity (e.g., network latency, service discovery, API gateways). However, individual services remain small, focused, and easier for individual teams to understand and manage.\n\n**2. Scalability**\n*   **Monolith:** Scaling requires duplicating the entire application across multiple servers. This is resource-inefficient if only one specific function (e.g., payment processing) is experiencing high load.\n*   **Microservices:** Highly scalable. You can independently scale only the specific services that require more compute or memory resources, optimizing infrastructure costs.\n\n**3. Deployment and Agility**\n*   **Monolith:** A single minor change requires testing and redeploying the entire application, which increases risk and slows down release cycles.\n*   **Microservices:** Services can be updated and deployed independently. This enables faster release cycles and continuous deployment, though it requires a mature CI/CD pipeline and DevOps culture.\n\n**4. Fault Tolerance**\n*   **Monolith:** A severe bug (like a memory leak or infinite loop) in one module can crash the entire application, creating a single point of failure.\n*   **Microservices:** Offers better fault isolation. If one service fails, the rest of the application can often continue functioning (graceful degradation), provided the system is designed to handle timeouts and failures.\n\n**5. Technology Stack**\n*   **Monolith:** You are generally locked into a single technology stack (language, framework, database) for the entire application. Upgrading legacy technologies is a massive undertaking.\n*   **Microservices:** Allows for polyglot programming. Teams can choose the best language, framework, or database tailored to their specific service's needs.\n\n**6. Data Management and Consistency**\n*   **Monolith:** Uses a single, centralized database, making ACID transactions, joins, and data consistency very easy to manage.\n*   **Microservices:** Each service typically manages its own database. This requires handling complex distributed data patterns (like eventual consistency and the Saga pattern) and makes cross-service transactions and queries much more difficult.\n\nAnswer: The main trade-off is between the initial simplicity, straightforward testing, and easy data management of a monolith versus the independent scalability, technological flexibility, and fault isolation of microservices, which come at the cost of high operational and distributed system complexity. | Confidence: 100%",
+          "extracted_confidence": 1.0,
+          "extracted_answer": "The main trade-off is between the initial simplicity, straightforward testing, and easy data management of a monolith versus the independent scalability, technological flexibility, and fault isolation of microservices, which come at the cost of high operational and distributed system complexity.",
+          "correct": false
+        }
+      ],
+      "cds": null,
+      "ground_truth": ""
+    },
+    {
+      "question_id": "open_002",
+      "domain": "openended",
+      "condition": "A",
+      "model": "gemini",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "Designing a URL shortening service like bit.ly is a classic system design problem. Here is a step-by-step blueprint to design it:\n\n### 1. Requirements Clarification\n**Functional Requirements:**\n*   Given a long URL, the service should generate a unique, short alias.\n*   When users click a short link, they should be redirected to the original long URL.\n*   (Optional) Users can pick custom short links.\n*   (Optional) Links can have an expiration time.\n\n**Non-Functional Requirements:**\n*   **Highly Available:** Redirection must not fail, as it breaks user links.\n*   **Low Latency:** Redirection should happen in real-time with minimal delay.\n*   **Scalable:** The system will be read-heavy (typically a 100:1 read-to-write ratio).\n\n### 2. Capacity Estimation (Back-of-the-envelope)\n*   **Traffic:** Assume 100 million new URLs generated per month. With a 100:1 read/write ratio, that's 10 billion redirections per month.\n*   **QPS (Queries Per Second):** \n    *   Writes: ~40 URLs/second.\n    *   Reads: ~4,000 redirections/second.\n*   **Storage:** If we store URLs for 10 years, that's 12 billion records. Assuming 500 bytes per record, we need ~6TB of database storage.\n\n### 3. API Design\nWe need two primary REST endpoints:\n1.  **Create Short URL:** `POST /api/v1/shorten`\n    *   *Payload:* `{ \"long_url\": \"https://...\", \"custom_alias\": \"my-link\" }`\n    *   *Response:* `{ \"short_url\": \"https://bit.ly/3xyz\" }`\n2.  **Redirect:** `GET /{short_url}`\n    *   *Response:* HTTP 301 (Permanent Redirect) or 302 (Temporary Redirect) to the `long_url`. *(Note: 301 allows browsers to cache the redirect, reducing server load. 302 forces the browser to hit the server every time, which is better for analytics).*\n\n### 4. Data Model\nA NoSQL database (like DynamoDB or Cassandra) or a sharded Relational Database (like PostgreSQL) works well since the data is highly independent and requires simple key-value lookups.\n**Table: `URL_Mapping`**\n*   `short_url_hash` (Primary Key, varchar: 7 chars)\n*   `long_url` (varchar)\n*   `creation_date` (timestamp)\n*   `expiration_date` (timestamp)\n*   `user_id` (indexed, for analytics/management)\n\n### 5. Core Algorithm: How to Shorten?\nWe need a short string. Using **Base62 encoding** (a-z, A-Z, 0-9) is standard. A 7-character Base62 string gives us $62^7 \\approx 3.5$ trillion unique URLs, which is more than enough.\n\n**Approach: Distributed ID Generator + Base62**\nInstead of hashing the long URL (which can cause collisions), we generate a unique integer ID for every new request and convert that integer to Base62.\n1.  Use a distributed ID generator (like Twitter Snowflake, or a dedicated database counter like ZooKeeper/Redis).\n2.  When a request comes in, get a unique ID (e.g., `125`).\n3.  Convert `125` to Base62 (e.g., `cb`).\n4.  Save the mapping: `cb` -> `https://long-url.com`.\n\n### 6. System Architecture\n1.  **Client** sends a request to shorten or resolve a URL.\n2.  **Load Balancer** distributes incoming traffic across multiple Web/Application Servers.\n3.  **Application Servers** handle the business logic (talking to the ID generator, encoding, and DB routing).\n4.  **Cache Layer (Redis/Memcached):** Since 20% of URLs will likely generate 80% of the traffic (Pareto principle), caching the `short -> long` mapping in memory is crucial for low latency.\n5.  **Database Layer:** Stores the persistent mappings.\n\n### 7. Scaling and Optimizations\n*   **Database Sharding:** As the database grows beyond a single machine, shard the database based on the first character of the `short_url_hash` or by consistent hashing.\n*   **Cache Eviction:** Use an LRU (Least Recently Used) policy for the cache so that inactive links are dropped from memory.\n*   **Rate Limiting:** Implement rate limiting by IP or API key to prevent malicious users from exhausting the ID pool.\n*   **Analytics:** Use an asynchronous message queue (like Kafka) to log click events (timestamp, IP, browser) without slowing down the redirection process.\n\nAnswer: A URL shortener is designed using a distributed ID generator converted to a Base62 string to create a 7-character alias, backed by a highly available architecture featuring load balancers, a Redis cache layer for fast read-heavy redirections, and a sharded NoSQL/SQL database for persistent storage. | Confidence: 100%",
+          "extracted_confidence": 1.0,
+          "extracted_answer": "A URL shortener is designed using a distributed ID generator converted to a Base62 string to create a 7-character alias, backed by a highly available architecture featuring load balancers, a Redis cache layer for fast read-heavy redirections, and a sharded NoSQL/SQL database for persistent storage.",
+          "correct": false
+        }
+      ],
+      "cds": null,
+      "ground_truth": ""
+    },
+    {
+      "question_id": "open_003",
+      "domain": "openended",
+      "condition": "A",
+      "model": "gemini",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "Designing a distributed rate limiter is a classic system design problem. A rate limiter controls the rate of traffic sent by a client or a service to prevent DoS attacks, reduce cost, and prevent servers from being overloaded. \n\nHere is a step-by-step guide on how to design a distributed rate limiter:\n\n### 1. Understand the Requirements\n*   **Functional Requirements:**\n    *   Limit requests based on various identifiers (e.g., IP address, User ID, API Key).\n    *   Return a specific HTTP status code (429 Too Many Requests) when the limit is exceeded.\n*   **Non-Functional Requirements:**\n    *   **Low Latency:** The rate limiter is in the critical path of every request; it must not add noticeable delay.\n    *   **High Availability:** If the rate limiter goes down, it shouldn't take the whole system down (usually designed to \"fail-open\").\n    *   **Scalability:** Must handle high volumes of traffic across multiple distributed servers.\n\n### 2. Choose a Rate Limiting Algorithm\nThere are several algorithms, each with trade-offs:\n*   **Token Bucket:** Tokens are added to a bucket at a fixed rate. Each request consumes a token. If the bucket is empty, the request is dropped. *Pros: Memory efficient, allows bursts of traffic.*\n*   **Leaking Bucket:** Requests are added to a queue (bucket). The queue is processed at a fixed rate. *Pros: Smooths out traffic. Cons: Bursts can fill up the queue with old requests.*\n*   **Fixed Window Counter:** Divides time into fixed windows (e.g., 12:00 to 12:01) and counts requests. *Pros: Simple. Cons: Traffic spikes at the edges of windows can allow 2x the allowed traffic.*\n*   **Sliding Window Log:** Keeps a timestamp log of every request. *Pros: Highly accurate. Cons: Consumes a lot of memory.*\n*   **Sliding Window Counter:** A hybrid of Fixed Window and Sliding Window Log. It tracks counters for the previous and current window and calculates a weighted sum. *Pros: Memory efficient and smooths out edge-case spikes. (Highly recommended for distributed systems).*\n\n### 3. High-Level Architecture\n1.  **Client** sends a request to the server.\n2.  The request hits a **Load Balancer**, which routes it to an **API Gateway** or a dedicated Rate Limiter service.\n3.  The Rate Limiter checks a **Distributed Cache (e.g., Redis)** to fetch the current counter/bucket state for the user/IP.\n4.  If the limit is exceeded, the API Gateway returns an `HTTP 429 Too Many Requests` response.\n5.  If the limit is not exceeded, the request is forwarded to the **Application Servers**.\n\n### 4. Handling Distributed Challenges\nWhen you have multiple API Gateways processing requests simultaneously, you run into distributed system problems:\n\n*   **Race Conditions:** Two requests from the same user might hit two different API gateways at the exact same time. Both read the Redis counter as `4`, both increment it to `5`, bypassing the limit.\n    *   *Solution:* Use **Redis Lua scripts**. Lua scripts are executed atomically in Redis, ensuring that the read-increment-write operation happens as a single, uninterruptible step.\n*   **Latency:** Making a network call to Redis for *every single request* adds latency.\n    *   *Solution:* Use an in-memory local cache on the API Gateway (like Guava cache or an LRU cache) to store recent rate-limit decisions. Alternatively, use a relaxed consistency model where the local gateway batches requests and syncs with Redis asynchronously.\n*   **Synchronization (Alternative to Redis):** Instead of a centralized Redis cluster, you can use a **Gossip Protocol**. Each API gateway maintains its own local counters and broadcasts them to other gateways. This is highly available and low latency, but relies on eventual consistency (meaning a user might briefly exceed the limit).\n\n### 5. System Optimizations\n*   **Fail-Open Mechanism:** If the Redis cluster goes down, the API Gateway should be configured to let traffic through (fail-open) rather than blocking all users (fail-closed), relying on downstream auto-scaling to handle the load temporarily.\n*   **Sharding:** Shard the Redis cluster based on the rate-limiting key (e.g., hash of the User ID) to distribute the load evenly across multiple Redis nodes.\n*   **Headers:** Include HTTP headers in the response to inform the client about their limits (e.g., `X-Ratelimit-Remaining`, `X-Ratelimit-Limit`, `X-Ratelimit-Retry-After`).\n\nAnswer: A distributed rate limiter is best designed using an API Gateway backed by a fast in-memory datastore like Redis, utilizing algorithms like Token Bucket or Sliding Window Counter, and handling race conditions via Lua scripts while optimizing latency with local caching. | Confidence: 100%",
+          "extracted_confidence": 1.0,
+          "extracted_answer": "A distributed rate limiter is best designed using an API Gateway backed by a fast in-memory datastore like Redis, utilizing algorithms like Token Bucket or Sliding Window Counter, and handling race conditions via Lua scripts while optimizing latency with local caching.",
+          "correct": false
+        }
+      ],
+      "cds": null,
+      "ground_truth": ""
+    },
+    {
+      "question_id": "open_004",
+      "domain": "openended",
+      "condition": "A",
+      "model": "gemini",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "The trade-offs between SQL (relational) and NoSQL (non-relational) databases generally revolve around data structure, scalability, consistency, and query complexity. Here is a breakdown of the primary trade-offs:\n\n**1. Schema: Rigidity vs. Flexibility**\n*   **SQL:** Uses a predefined, rigid schema (schema-on-write). Data must fit into tables, rows, and columns. This ensures data integrity and predictability but makes it difficult and time-consuming to change the database structure later.\n*   **NoSQL:** Uses a dynamic or flexible schema (schema-on-read). You can store unstructured or semi-structured data (like JSON documents) and add new fields on the fly without disrupting existing data. \n\n**2. Scaling: Vertical vs. Horizontal**\n*   **SQL:** Typically scales *vertically* (scaling up). To handle more load, you must upgrade the hardware of the existing server (more CPU, RAM, SSD). This can become prohibitively expensive and has a hard physical limit.\n*   **NoSQL:** Typically scales *horizontally* (scaling out). To handle more load, you simply add more commodity servers to the database cluster. This makes NoSQL highly cost-effective for massive datasets and high traffic.\n\n**3. Data Integrity: ACID vs. BASE (CAP Theorem)**\n*   **SQL:** Strictly adheres to ACID properties (Atomicity, Consistency, Isolation, Durability). This guarantees strong consistency, meaning every read receives the most recent write. It is ideal for financial systems or applications where data accuracy is paramount.\n*   **NoSQL:** Often follows the BASE model (Basically Available, Soft state, Eventual consistency). To achieve high availability and partition tolerance across distributed servers, NoSQL databases often trade off immediate consistency. Data will *eventually* become consistent across all nodes, but there might be a slight delay. *(Note: Some modern NoSQL databases now offer ACID compliance, but it is not the default standard).*\n\n**4. Querying: Complex vs. Simple**\n*   **SQL:** Uses a standardized, powerful language (Structured Query Language) designed for complex queries. It excels at joining data across multiple tables and performing complex aggregations.\n*   **NoSQL:** Lacks a standardized query language (each database has its own API). While great for simple, high-speed read/write operations, NoSQL databases generally struggle with complex joins. Data is often duplicated (denormalized) to avoid the need for joins altogether.\n\n**5. Data Types**\n*   **SQL:** Best for structured data where relationships between entities are clear and well-defined (e.g., an e-commerce system with Users, Orders, and Products).\n*   **NoSQL:** Best for unstructured, semi-structured, or rapidly changing data. It comes in various types optimized for specific use cases: Document (MongoDB), Key-Value (Redis), Column-family (Cassandra), and Graph (Neo4j).\n\n**Summary:**\nChoose **SQL** if you need complex queries, strict data integrity, and have structured data that doesn't change often. Choose **NoSQL** if you need to scale massively, have unstructured data, require rapid development cycles, and can tolerate eventual consistency.\n\nAnswer: SQL provides strong consistency, structured schemas, and complex querying via vertical scaling, while NoSQL offers schema flexibility, horizontal scalability, and high performance for unstructured data, often trading strict consistency for availability. | Confidence: 99%",
+          "extracted_confidence": 0.99,
+          "extracted_answer": "SQL provides strong consistency, structured schemas, and complex querying via vertical scaling, while NoSQL offers schema flexibility, horizontal scalability, and high performance for unstructured data, often trading strict consistency for availability.",
+          "correct": false
+        }
+      ],
+      "cds": null,
+      "ground_truth": ""
+    },
+    {
+      "question_id": "open_005",
+      "domain": "openended",
+      "condition": "A",
+      "model": "gemini",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "Designing a real-time collaborative document editing system like Google Docs requires handling concurrent edits, maintaining low latency, and ensuring data consistency across all clients. Here is a comprehensive system design:\n\n### 1. Core Requirements\n*   **Functional:** Multiple users can edit a document simultaneously; real-time visibility of cursors and edits; document history and version control; offline editing support.\n*   **Non-Functional:** High availability, low latency (edits should appear instantly), eventual consistency (all users eventually see the exact same document state), and scalability.\n\n### 2. Core Algorithm: Conflict Resolution\nWhen multiple users edit the same text simultaneously, conflicts occur. To resolve this without locking the document, we use one of two primary algorithms:\n*   **Operational Transformation (OT):** The classic algorithm used by Google Docs. It transforms operations (insert, delete) based on concurrent operations so that the final document state is consistent across all clients, regardless of the order in which operations are received.\n*   **CRDTs (Conflict-free Replicated Data Types):** A modern alternative that assigns unique, mathematically ordered identifiers to every character. It guarantees consistency without requiring a central server to sequence operations.\n\n### 3. High-Level Architecture\n*   **Client Application:** A web or mobile app containing a local copy of the document and a local OT/CRDT engine. It applies local edits instantly (optimistic UI) and queues them to send to the server.\n*   **Load Balancer:** Distributes incoming traffic across multiple API and WebSocket servers.\n*   **API Gateway:** Handles standard HTTP requests (authentication, fetching document lists, permissions).\n*   **WebSocket Servers (Collaboration Servers):** Maintain persistent, bidirectional connections with clients. They receive operations, sequence them, and broadcast them to other connected clients.\n*   **Pub/Sub System (e.g., Redis Pub/Sub or Kafka):** If users collaborating on the same document are connected to different WebSocket servers, the Pub/Sub system routes operations between these servers. Alternatively, **Sticky Sessions** or a **Consistent Hashing** mechanism can be used to ensure all users editing the same document connect to the exact same Collaboration Server.\n*   **Storage Layer:**\n    *   **In-Memory Cache (Redis):** Stores the active state of the document and recent operations for lightning-fast read/write access.\n    *   **Time-Series/Append-Only Database (Cassandra/MongoDB):** Stores the sequence of all operations. This acts as the source of truth and enables the \"Version History\" feature.\n    *   **Blob Storage (S3):** Stores periodic snapshots of the document to prevent the system from having to replay millions of operations to load an old document.\n\n### 4. Step-by-Step Data Flow (The Editing Process)\n1.  **Connection:** User A opens a document. The client fetches the latest document snapshot from the database and establishes a WebSocket connection to a Collaboration Server.\n2.  **Local Edit:** User A types the letter \"X\". The local OT engine applies \"X\" immediately to the screen and sends the operation `(Insert 'X' at position 5, Revision #10)` to the server.\n3.  **Server Processing:** The Collaboration Server receives the operation. It checks the revision number. If User B made an edit at the same time, the server's OT engine transforms User A's operation to account for User B's edit.\n4.  **Broadcast:** The server broadcasts the transformed operation to all other connected clients via WebSockets.\n5.  **Persistence:** The server appends the operation to the Redis cache and the append-only database.\n6.  **Snapshotting:** Every few minutes (or after a set number of operations), an asynchronous background worker compiles the operations into a new text snapshot and saves it to Blob Storage.\n\n### 5. Scaling and Optimization\n*   **Offline Support:** If a client loses connection, local edits are stored in `localStorage` or `IndexedDB`. Upon reconnection, the client sends the batched operations to the server, which uses OT to merge them into the current state.\n*   **Cursor Tracking:** Cursors and text selections are ephemeral data. They are broadcasted via WebSockets but are *not* saved to the persistent database, saving massive amounts of storage and database I/O.\n*   **Throttling/Batching:** To reduce network overhead, rapid keystrokes can be batched together (e.g., sending operations every 50ms instead of every single keystroke).\n\nAnswer: A distributed architecture utilizing WebSockets for real-time bidirectional communication, Operational Transformation (OT) or CRDTs for concurrent conflict resolution, and a combination of in-memory caching (Redis) and append-only databases for state persistence and version history. | Confidence: 98%",
+          "extracted_confidence": 0.98,
+          "extracted_answer": "A distributed architecture utilizing WebSockets for real-time bidirectional communication, Operational Transformation (OT) or CRDTs for concurrent conflict resolution, and a combination of in-memory caching (Redis) and append-only databases for state persistence and version history.",
+          "correct": false
+        }
+      ],
+      "cds": null,
+      "ground_truth": ""
+    }
+  ]
+}

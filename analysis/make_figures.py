@@ -252,7 +252,7 @@ def make_figure1(data: dict) -> None:
 # ---------------------------------------------------------------------------
 
 def make_figure2(data: dict) -> None:
-    """Same structure as Figure 1 but Y-axis = ECE."""
+    """Same structure as Figure 1 but Y-axis = ECE. Includes Condition B (solid) and C (dashed)."""
     models = sorted(data.keys())
     n_models = len(models)
     if n_models == 0:
@@ -265,23 +265,38 @@ def make_figure2(data: dict) -> None:
 
     for ax, model_key in zip(axes, models):
         results_b = data[model_key].get("B", [])
-        if not results_b:
+        results_c = data[model_key].get("C", [])
+        
+        if not results_b and not results_c:
             continue
 
         for domain in ("factual", "technical", "openended"):
-            # Compute ECE per turn for this domain
-            domain_results = [r for r in results_b if r.get("domain") == domain]
-            if not domain_results:
-                continue
-            ece_turns = compute_ece_per_turn(domain_results)
-            turns = list(range(1, len(ece_turns) + 1))
-            valid = [(t, e) for t, e in zip(turns, ece_turns) if not np.isnan(e)]
-            if not valid:
-                continue
-            valid_turns, valid_ece = zip(*valid)
             color = DOMAIN_COLORS[domain]
-            ax.plot(valid_turns, valid_ece, "o-", color=color,
-                    label=DOMAIN_LABELS[domain], linewidth=2, markersize=5)
+            domain_label = DOMAIN_LABELS[domain]
+            
+            # Plot Condition B (solid lines)
+            if results_b:
+                domain_results_b = [r for r in results_b if r.get("domain") == domain]
+                if domain_results_b:
+                    ece_turns = compute_ece_per_turn(domain_results_b)
+                    turns = list(range(1, len(ece_turns) + 1))
+                    valid = [(t, e) for t, e in zip(turns, ece_turns) if not np.isnan(e)]
+                    if valid:
+                        valid_turns, valid_ece = zip(*valid)
+                        ax.plot(valid_turns, valid_ece, "o-", color=color,
+                                label=f"{domain_label} (B)", linewidth=2, markersize=5)
+            
+            # Plot Condition C (dashed lines)
+            if results_c:
+                domain_results_c = [r for r in results_c if r.get("domain") == domain]
+                if domain_results_c:
+                    ece_turns = compute_ece_per_turn(domain_results_c)
+                    turns = list(range(1, len(ece_turns) + 1))
+                    valid = [(t, e) for t, e in zip(turns, ece_turns) if not np.isnan(e)]
+                    if valid:
+                        valid_turns, valid_ece = zip(*valid)
+                        ax.plot(valid_turns, valid_ece, "s--", color=color,
+                                label=f"{domain_label} (C)", linewidth=2, markersize=5, alpha=0.8)
 
         ax.set_title(MODEL_DISPLAY.get(model_key, model_key), fontsize=12, fontweight="bold")
         ax.set_xlabel("Turn", fontsize=11)
@@ -293,7 +308,7 @@ def make_figure2(data: dict) -> None:
     axes[0].legend(title="Domain", fontsize=9, title_fontsize=9, loc="upper left")
 
     fig.suptitle(
-        "Figure 2 — Calibration Error Across Turns (Condition B: Self-Anchoring)",
+        "Figure 2 — Calibration Error Across Turns (B: solid, C: dashed)",
         fontsize=12, fontweight="bold", y=1.02,
     )
     fig.tight_layout()

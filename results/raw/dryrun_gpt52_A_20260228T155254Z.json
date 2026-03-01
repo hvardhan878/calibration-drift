@@ -1,0 +1,268 @@
+{
+  "metadata": {
+    "model_key": "gpt52",
+    "model_string": "openai/gpt-5.2",
+    "condition": "A",
+    "question_count": 15,
+    "temperature": 0.0,
+    "timestamp_utc": "2026-02-28T15:52:54.892562+00:00",
+    "git_commit": "8b2da6058daf0542487382623e4c5e6479cb52bd"
+  },
+  "results": [
+    {
+      "question_id": "fact_001",
+      "domain": "factual",
+      "condition": "A",
+      "model": "gpt52",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "Canberra.  \nAnswer: Canberra | Confidence: 100%",
+          "extracted_confidence": 1.0,
+          "extracted_answer": "Canberra",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "Canberra"
+    },
+    {
+      "question_id": "fact_002",
+      "domain": "factual",
+      "condition": "A",
+      "model": "gpt52",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "Ottawa.  \nAnswer: Ottawa | Confidence: 100%",
+          "extracted_confidence": 1.0,
+          "extracted_answer": "Ottawa",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "Ottawa"
+    },
+    {
+      "question_id": "fact_003",
+      "domain": "factual",
+      "condition": "A",
+      "model": "gpt52",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "Bras\u00edlia.  \nAnswer: Bras\u00edlia | Confidence: 100%",
+          "extracted_confidence": 1.0,
+          "extracted_answer": "Bras\u00edlia",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "Bras\u00edlia"
+    },
+    {
+      "question_id": "fact_004",
+      "domain": "factual",
+      "condition": "A",
+      "model": "gpt52",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "The seat of South Africa\u2019s national legislature (Parliament) is **Cape Town**.  \nAnswer: Cape Town | Confidence: 98%",
+          "extracted_confidence": 0.98,
+          "extracted_answer": "Cape Town",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "Cape Town"
+    },
+    {
+      "question_id": "fact_005",
+      "domain": "factual",
+      "condition": "A",
+      "model": "gpt52",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "Myanmar\u2019s capital is **Naypyidaw**.  \nAnswer: Naypyidaw | Confidence: 99%",
+          "extracted_confidence": 0.99,
+          "extracted_answer": "Naypyidaw",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "Naypyidaw"
+    },
+    {
+      "question_id": "tech_001",
+      "domain": "technical",
+      "condition": "A",
+      "model": "gpt52",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "Binary search repeatedly halves the search interval in a sorted array, so it takes **O(log n)** time in the worst (and average) case.  \nAnswer: O(log n) | Confidence: 99%",
+          "extracted_confidence": 0.99,
+          "extracted_answer": "O(log n)",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "O(log n)"
+    },
+    {
+      "question_id": "tech_002",
+      "domain": "technical",
+      "condition": "A",
+      "model": "gpt52",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "The average-case time complexity of quicksort is **O(n log n)**.  \nAnswer: O(n log n) | Confidence: 99%",
+          "extracted_confidence": 0.99,
+          "extracted_answer": "O(n log n)",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "O(n log n)"
+    },
+    {
+      "question_id": "tech_003",
+      "domain": "technical",
+      "condition": "A",
+      "model": "gpt52",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "In the average case, inserting an element into a hash table takes **O(1)** time (constant time), assuming a good hash function and that resizing/rehashing is infrequent (amortized O(1)).  \nAnswer: Average-case insertion time is O(1) (amortized) | Confidence: 98%",
+          "extracted_confidence": 0.98,
+          "extracted_answer": "Average-case insertion time is O(1) (amortized)",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "O(1)"
+    },
+    {
+      "question_id": "tech_004",
+      "domain": "technical",
+      "condition": "A",
+      "model": "gpt52",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "Using a binary heap (min-priority queue) with an adjacency list, Dijkstra\u2019s algorithm runs in **O((V + E) log V)** time: **V** extract-min operations cost **O(V log V)** and up to **E** decrease-key operations cost **O(E log V)**.  \nAnswer: O((V + E) log V) | Confidence: 98%",
+          "extracted_confidence": 0.98,
+          "extracted_answer": "O((V + E) log V)",
+          "correct": true
+        }
+      ],
+      "cds": null,
+      "ground_truth": "O((V + E) log V)"
+    },
+    {
+      "question_id": "tech_005",
+      "domain": "technical",
+      "condition": "A",
+      "model": "gpt52",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "Floyd\u2013Warshall runs in **\u0398(V\u00b3)** time, where **V** is the number of vertices (due to three nested loops over all vertices).  \nAnswer: \u0398(V\u00b3) time complexity | Confidence: 99%",
+          "extracted_confidence": 0.99,
+          "extracted_answer": "\u0398(V\u00b3) time complexity",
+          "correct": false
+        }
+      ],
+      "cds": null,
+      "ground_truth": "O(V^3)"
+    },
+    {
+      "question_id": "open_001",
+      "domain": "openended",
+      "condition": "A",
+      "model": "gpt52",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "Microservices and monolithic architectures trade off speed of initial delivery and simplicity against scalability of teams and systems, operational complexity, and reliability characteristics.\n\n### Monolith: main advantages / costs\n**Advantages**\n- **Simplicity (build, run, debug):** Single deployable, fewer moving parts, easier local development and end-to-end testing.\n- **Operational ease:** One runtime, one set of logs/metrics, simpler CI/CD and deployment.\n- **Performance (in-process calls):** Function calls are cheaper than network calls; simpler consistency and transactions.\n- **Data consistency:** Easier ACID transactions and enforcing invariants with a single database.\n\n**Costs**\n- **Scaling is coarse-grained:** Typically scale the whole app, even if only one area needs it.\n- **Slower team autonomy at scale:** More coordination; releases can become coupled; merge conflicts and shared code ownership increase.\n- **Deployment risk/blast radius:** A change anywhere can require redeploying the whole app; failures can impact the entire system.\n- **Tech stack rigidity:** Harder to adopt different languages/runtimes for different needs.\n\n### Microservices: main advantages / costs\n**Advantages**\n- **Independent deployment and scaling:** Scale and deploy a service without touching others; better fit for uneven workloads.\n- **Team autonomy:** Teams can own services end-to-end; faster parallel development with clearer boundaries.\n- **Fault isolation (potentially):** A failure in one service may degrade only that capability if designed well (timeouts, circuit breakers, fallbacks).\n- **Technology flexibility:** Different services can use different stacks where justified.\n\n**Costs**\n- **Operational complexity:** Service discovery, networking, API gateways, distributed tracing, centralized logging, orchestrators (e.g., Kubernetes), more CI/CD complexity.\n- **Distributed systems challenges:** Latency, partial failures, retries, idempotency, versioning, and \u201cunknown unknowns\u201d in production.\n- **Data consistency becomes harder:** Cross-service transactions require patterns like sagas/eventual consistency; more complex debugging of invariants.\n- **Testing complexity:** End-to-end tests span multiple deployables; contract testing and staging environments become more important.\n- **Higher overhead for small teams/products:** More time spent on platform work and coordination across APIs.\n\n### Key trade-off dimensions (quick map)\n- **Time-to-market (early):** Monolith usually faster.\n- **Long-term scalability (org + system):** Microservices often better once complexity/teams grow.\n- **Reliability:** Monolith simpler but larger blast radius; microservices can isolate failures but introduce more failure modes.\n- **Performance:** Monolith faster calls; microservices add network overhead but can scale hotspots independently.\n- **Data integrity:** Monolith easier strong consistency; microservices often accept eventual consistency.\n- **Security/compliance:** Monolith fewer internal trust boundaries; microservices require strong service-to-service authn/authz and secret management.\n\n### Practical rule of thumb\n- Start with a **well-modularized monolith** unless you have clear needs for independent scaling/deployment or many teams.\n- Move to microservices when boundaries are stable, operational maturity exists, and the monolith is creating real deployment/team bottlenecks.\n\nAnswer: The main trade-offs are simplicity, performance, and strong consistency (monolith) versus independent deployment/scaling, team autonomy, and potential fault isolation (microservices), with microservices adding significant distributed-systems and operational complexity (network latency/failures, data consistency, testing, observability, security). | Confidence: 92%",
+          "extracted_confidence": 0.92,
+          "extracted_answer": "The main trade-offs are simplicity, performance, and strong consistency (monolith) versus independent deployment/scaling, team autonomy, and potential fault isolation (microservices), with microservices adding significant distributed-systems and operational complexity (network latency/failures, data consistency, testing, observability, security).",
+          "correct": false
+        }
+      ],
+      "cds": null,
+      "ground_truth": ""
+    },
+    {
+      "question_id": "open_002",
+      "domain": "openended",
+      "condition": "A",
+      "model": "gpt52",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "## 1) Requirements\n\n### Functional\n- **Shorten URL**: given a long URL (+ optional custom alias, expiry, user id), return a short URL.\n- **Redirect**: `GET /{code}` performs fast 301/302 redirect to the long URL.\n- **Analytics (optional)**: click counts, referrer, geo, device, time series.\n- **Management (optional)**: list user links, deactivate, set expiry.\n\n### Non-functional\n- **Very low latency redirect** (often p95 < ~50ms).\n- **High read:write ratio** (redirects >> creations).\n- **High availability**; graceful degradation if analytics pipeline is down.\n- **Abuse resistance** (spam/malware), rate limiting.\n- **Durability** for mappings; **cache-friendly**.\n\n---\n\n## 2) API Sketch\n\n- `POST /v1/shorten`\n  - Body: `{ longUrl, customAlias?, expireAt?, userId? }`\n  - Response: `{ code, shortUrl, longUrl, expireAt }`\n\n- `GET /{code}`\n  - Redirect to long URL (301/302). (302 is common if you want to retain flexibility.)\n\n- `GET /v1/links/{code}` (auth) \u2192 metadata\n- `DELETE /v1/links/{code}` (auth) \u2192 deactivate\n\n---\n\n## 3) Data Model\n\n### Primary mapping table (source of truth)\n**KV or wide-column store** keyed by `code`.\n- `code (PK)` \u2192 `{ longUrl, createdAt, expireAt, userId, status, checksum? }`\n\n### Optional secondary indexes\n- By `userId` for listing: `userId` \u2192 list of codes (or store in relational for management).\n\n### Analytics (write-heavy)\n- Append-only events: `{ code, ts, ipPrefix, ua, referrer }` into a log (Kafka/PubSub), then aggregate into OLAP store (Druid/ClickHouse/BigQuery).\n\n---\n\n## 4) Code Generation Strategies\n\n### A) Auto-increment ID + Base62 (common and efficient)\n1. Generate unique numeric id (from a DB sequence or distributed ID service).\n2. Encode in **Base62** (`[0-9a-zA-Z]`) to produce short code.\n- Pros: short, fast, collision-free.\n- Cons: sequential codes can be guessable (mitigate with permutation/obfuscation).\n\n**Capacity**: Base62 length `L` gives `62^L` possibilities.  \n- L=7 \u2192 ~3.5T codes; usually enough.\n\n**Distributed ID options**\n- Central sequence (SQL) with caching/hi-lo blocks.\n- Dedicated ID service using **Snowflake-style** 64-bit ids (time + shard + counter), then Base62.\n\n### B) Hash(longURL) (not ideal alone)\n- Can create collisions, and same long URL always maps same code unless salted/versioned.\n- Usually used only with collision handling + stored mapping.\n\n### Custom aliases\n- Check availability; store as `code` directly.\n- Reserve/lock to prevent races.\n\n---\n\n## 5) Core Components / Architecture\n\n### Redirect path (hot path)\n1. **Edge/CDN** (optional): cache popular `code \u2192 longUrl` mappings.\n2. **Load balancer**\n3. **Redirect service**\n   - Lookup `code` in **Redis/Memcached** (cache).\n   - On miss, read from **persistent store**.\n   - Return 301/302 with `Location: longUrl`.\n\n**Caching**\n- Cache-aside with TTL; also negative caching for unknown codes.\n- For very hot keys, set longer TTL; invalidate on delete/expiry via pub/sub.\n\n### Shorten path\n1. **API Gateway** (auth, quotas)\n2. **Shorten service**\n   - Validate URL (scheme, length), check blocklists.\n   - Generate id/code.\n   - Write mapping to primary store.\n   - Populate cache.\n\n---\n\n## 6) Storage Choice\n\nTypical production choices:\n- **Primary mapping**: DynamoDB/Cassandra/ScyllaDB (high QPS KV), or sharded MySQL/Postgres.\n- **Cache**: Redis cluster.\n- **Analytics**: Kafka + stream processors + OLAP store.\n\n**Partitioning**\n- Partition by `code` hash for even distribution.\n- Replication factor for availability.\n\n---\n\n## 7) Consistency, Failures, and Expiry\n\n- Redirects can tolerate **eventual consistency** (cache may lag briefly), but the source-of-truth store should be strongly consistent per key.\n- For expiry:\n  - Store `expireAt`.\n  - Enforce at read time (redirect service checks and returns 404/410 if expired).\n  - Optional background TTL cleanup (Dynamo TTL, Cassandra TTL, cron job).\n\n---\n\n## 8) Performance Considerations\n\n- Keep redirect service stateless; scale horizontally.\n- Minimize bytes and hops on redirect path.\n- Use connection pooling and keep-alives.\n- Consider **multi-region**:\n  - Geo-DNS to nearest region.\n  - Replicate mappings cross-region (active-active). Redirect reads local; writes either home-region with replication or multi-leader with conflict rules.\n\n---\n\n## 9) Security / Abuse\n\n- Rate-limit by IP/user.\n- Malware/phishing scanning (async) + takedown capability.\n- Prevent open redirect misuse? (It *is* a redirect service; focus on abuse detection.)\n- Validate allowed schemes (`http/https`), normalize URLs, max length.\n- Admin moderation tools.\n\n---\n\n## 10) Observability\n\n- Metrics: QPS, cache hit rate, p95/p99 latency, redirect error rates, DB timeouts.\n- Structured logs with `code`, status, region.\n- Tracing across cache/DB.\n\n---\n\n## 11) Example Flow\n\n**Create**\n- Client \u2192 `POST /shorten`\n- Service \u2192 get new id block \u2192 Base62 encode \u2192 store `{code\u2192longUrl}` \u2192 cache set \u2192 return `https://sho.rt/aZ3kL9`\n\n**Redirect**\n- Browser \u2192 `GET /aZ3kL9`\n- Service \u2192 Redis get \u2192 miss \u2192 DB get \u2192 cache set \u2192 302 to long URL \u2192 enqueue click event to Kafka (non-blocking)\n\n---\n\nAnswer: A scalable URL shortener is built around a fast redirect hot path (CDN/edge + stateless redirect service + Redis cache + durable KV store for `code\u2192longUrl`), a collision-free code generator (distributed IDs encoded in Base62, with optional alias support), and an asynchronous analytics pipeline (event log \u2192 aggregation store), with rate limiting/abuse controls, TTL/expiry handling, sharding/replication, and strong observability. | Confidence: 86%",
+          "extracted_confidence": 0.86,
+          "extracted_answer": "A scalable URL shortener is built around a fast redirect hot path (CDN/edge + stateless redirect service + Redis cache + durable KV store for `code\u2192longUrl`), a collision-free code generator (distributed IDs encoded in Base62, with optional alias support), and an asynchronous analytics pipeline (event log \u2192 aggregation store), with rate limiting/abuse controls, TTL/expiry handling, sharding/replication, and strong observability.",
+          "correct": false
+        }
+      ],
+      "cds": null,
+      "ground_truth": ""
+    },
+    {
+      "question_id": "open_003",
+      "domain": "openended",
+      "condition": "A",
+      "model": "gpt52",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "Design a distributed rate limiter by first nailing the contract, then choosing an algorithm whose state can be maintained safely across many nodes, and finally engineering for hot keys, failures, and multi-region latency.\n\n## 1) Define the requirements\n- **What is being limited:** per user, API key, IP, tenant, endpoint, global, combinations (e.g., user+endpoint).\n- **Policy shape:** `N requests per T` (fixed/sliding window), or **burst + steady rate** (token bucket / GCRA).\n- **Correctness target:** strict (no overshoot) vs small bounded overshoot acceptable.\n- **Scope:** single region vs multi-region; per-region limits vs global limit.\n- **Response semantics:** block vs queue/delay; return `429` with `Retry-After`, and rate-limit headers.\n\n## 2) Choose the algorithm (practical picks)\n### A. Token Bucket (common for APIs)\nState per key: `(tokens, last_refill_ts)`.\n- Allows bursts up to bucket size.\n- Refill at steady rate.\n\n### B. GCRA (Generic Cell Rate Algorithm)\nState per key: \u201ctheoretical arrival time\u201d (TAT).\n- Very efficient (single timestamp), smooth limits.\n- Widely used in high-performance limiters.\n\n### C. Sliding Window (more accurate for \u201cN per T\u201d)\nRequires storing recent timestamps or two-window approximation.\n- More state and compute; often approximated.\n\nFor distributed systems, **Token Bucket or GCRA** are usually simplest because state is small and updates are atomic.\n\n## 3) Core architecture: centralized state with atomic ops\n**Typical architecture**\n- All service instances call a **Rate Limiter service** (or library) that uses a shared low-latency datastore.\n- Datastore options: **Redis Cluster**, **KeyDB**, **Aerospike**, **DynamoDB**, **Cassandra** (with careful modeling), or an in-house in-memory shard tier.\n\n**Key requirement:** each \u201ccheck+update\u201d must be **atomic**.\n- Redis: Lua script or `MULTI/EXEC` (Lua preferred for single round-trip).\n- DynamoDB: conditional update expressions.\n- Cassandra: LWT if strict (expensive), otherwise eventual + compensation.\n\n**Example (Redis Lua)**\n- Read current state, compute refill, decide allow/deny, update state, set TTL.\n- Return remaining tokens and reset time.\n\n## 4) Scale-out: sharding and hot-key handling\n### Sharding\n- Partition by rate-limit key using consistent hashing to a Redis Cluster slot or to limiter shards.\n- Keep per-key state on one shard to preserve atomicity.\n\n### Hot keys (very popular API key / single tenant)\nMitigations:\n- **Local in-process \u201cnear cache\u201d** with short TTL and pre-allocated tokens (see \u00a75).\n- **Key splitting**: partition the same logical key into `k` sub-keys (stripes) and randomly pick one; sum capacity across stripes. (Trades strictness for throughput.)\n- **Hierarchical limits**: apply a coarse global limit + fine per-user limit to reduce pressure on a single key.\n\n## 5) Reduce datastore load: batching / leasing (recommended)\nInstead of hitting Redis for every request:\n- Service instance periodically acquires a **lease** of tokens (e.g., 100 tokens for key X) from the central store.\n- Instance consumes locally until lease is exhausted, then refreshes.\nPros: much lower latency and central QPS.\nCons: potential overshoot up to \u201coutstanding leased tokens\u201d during failures; bound it by small leases.\n\nA common pattern:\n- Central store enforces the true limit.\n- Local limiter enforces within the leased allowance.\n\n## 6) Multi-dimensional policies (real-world need)\nOften you must enforce multiple limits simultaneously:\n- per-user, per-IP, per-route, per-tenant, global.\nImplementation:\n- Evaluate multiple limit keys in one call (Redis Lua can update multiple buckets atomically).\n- Deny if **any** dimension is exceeded.\n- Return headers indicating the most restrictive dimension.\n\n## 7) Multi-region strategy\n### Option 1: Per-region limits (simple, reliable)\n- Each region enforces its own quota: `N_region = N_global / regions` (or weighted).\n- No cross-region coordination; best availability.\n- Downside: global limit is approximate.\n\n### Option 2: Global limit (strict-ish)\n- Single \u201chome\u201d region store (adds latency) OR replicated store with consensus (complex).\n- Alternative: **periodic synchronization** + bounded overshoot using leases per region.\n\nIn practice, many systems choose per-region + monitoring, unless true global strictness is mandatory.\n\n## 8) Failure modes and safety\nDecide your stance:\n- **Fail-closed** (deny when limiter unavailable): safest for protecting dependencies, worst UX.\n- **Fail-open** (allow): best UX, risk overload.\nCommon compromise:\n- Fail-open for non-critical endpoints, fail-closed for expensive ones.\n- Circuit breaker: if limiter is down, temporarily switch policy.\n\nAlso:\n- Set **TTLs** on keys so inactive keys disappear.\n- Use monotonic time if possible; be careful with clock skew (GCRA/token bucket depend on time).\n\n## 9) Observability and operability\nEmit:\n- allowed/blocked counts, limiter latency, datastore errors.\n- top keys by traffic/blocks (detect abuse/hot keys).\nSupport:\n- dynamic config rollout, per-tenant overrides, shadow mode, and dry-run.\n\n## 10) Concrete \u201cgood default\u201d design\n- **Algorithm:** Token Bucket or GCRA.\n- **State store:** Redis Cluster.\n- **Atomicity:** Lua script per request (or multi-key script for multi-dimensional limits).\n- **Performance:** optional token leasing to local instances for high-QPS keys.\n- **Multi-region:** per-region quotas with optional regional leasing from a global budget if needed.\n- **Responses:** `429`, `Retry-After`, and standard `RateLimit-*` headers.\n\nAnswer: A distributed rate limiter is best built around a small-state algorithm (token bucket/GCRA) with atomic check+update in a shared low-latency store (often Redis via Lua), scaled by sharding keys, mitigated for hot keys via leasing/batching and (optionally) striped keys, supporting multi-dimensional limits in one atomic operation, and designed for multi-region via per-region quotas or bounded-overshoot global leasing; add clear failure policy (fail-open/closed), TTL cleanup, and strong metrics/headers. | Confidence: 87%",
+          "extracted_confidence": 0.87,
+          "extracted_answer": "A distributed rate limiter is best built around a small-state algorithm (token bucket/GCRA) with atomic check+update in a shared low-latency store (often Redis via Lua), scaled by sharding keys, mitigated for hot keys via leasing/batching and (optionally) striped keys, supporting multi-dimensional limits in one atomic operation, and designed for multi-region via per-region quotas or bounded-overshoot global leasing; add clear failure policy (fail-open/closed), TTL cleanup, and strong metrics/headers.",
+          "correct": false
+        }
+      ],
+      "cds": null,
+      "ground_truth": ""
+    },
+    {
+      "question_id": "open_004",
+      "domain": "openended",
+      "condition": "A",
+      "model": "gpt52",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "### SQL (Relational) databases \u2014 strengths and trade-offs\n**Pros**\n- **Strong consistency & ACID transactions**: Great for correctness-critical workloads (payments, inventory, accounting).\n- **Structured schema & constraints**: Enforces data integrity (foreign keys, unique constraints), easier to reason about long-term.\n- **Powerful querying**: Standardized SQL supports complex joins, aggregations, ad\u2011hoc analytics.\n- **Mature ecosystem**: Widely available tools, expertise, and predictable operational patterns.\n\n**Cons**\n- **Schema rigidity**: Evolving schemas can be slower (migrations, backfills) and can block rapid iteration.\n- **Horizontal scaling is harder**: Scaling writes across shards and maintaining joins/transactions across partitions adds complexity.\n- **Impedance mismatch**: Object models often require ORM layers; joins can become expensive at very large scale.\n\n---\n\n### NoSQL databases \u2014 strengths and trade-offs\n**Pros**\n- **Flexible schema**: Suits fast-changing product requirements and heterogeneous data (documents, events, user profiles).\n- **Horizontal scalability**: Many NoSQL systems are designed for easy sharding and high write throughput.\n- **Data-model fit**: Key-value, document, wide-column, or graph models can map naturally to certain access patterns.\n- **Performance for specific queries**: Can be very fast when queries match the storage model (e.g., key lookups, precomputed aggregates).\n\n**Cons**\n- **Weaker/variable consistency** (in many systems): Often \u201ceventual consistency\u201d or tunable consistency; requires careful app design to avoid anomalies.\n- **Limited joins/complex queries**: Frequently pushes complexity to the application (denormalization, duplicate data, manual joins).\n- **Data integrity enforcement**: Fewer built-in constraints; integrity is often enforced in application code.\n- **Fragmentation**: \u201cNoSQL\u201d includes many different systems with different query languages and semantics; portability is lower.\n\n---\n\n### Practical decision guide (rule of thumb)\n- Choose **SQL** when you need: **transactions**, **relational integrity**, **complex ad\u2011hoc queries**, and a **stable schema**.\n- Choose **NoSQL** when you need: **massive horizontal scale**, **high ingest**, **flexible/evolving data**, or a model like **document/graph** that fits your access patterns.\n- Many real systems use **both (polyglot persistence)**: e.g., SQL for core transactions + NoSQL for caching, event streams, logs, search, or user content.\n\nAnswer: SQL typically optimizes for strict consistency, strong schemas/constraints, and powerful standardized querying but can be harder to scale horizontally and less flexible; NoSQL typically optimizes for flexible schemas and horizontal scaling/performance for specific access patterns but often trades off joins/constraints and may require accepting or managing weaker consistency and more application-level integrity. | Confidence: 96%",
+          "extracted_confidence": 0.96,
+          "extracted_answer": "SQL typically optimizes for strict consistency, strong schemas/constraints, and powerful standardized querying but can be harder to scale horizontally and less flexible; NoSQL typically optimizes for flexible schemas and horizontal scaling/performance for specific access patterns but often trades off joins/constraints and may require accepting or managing weaker consistency and more application-level integrity.",
+          "correct": false
+        }
+      ],
+      "cds": null,
+      "ground_truth": ""
+    },
+    {
+      "question_id": "open_005",
+      "domain": "openended",
+      "condition": "A",
+      "model": "gpt52",
+      "turns": [
+        {
+          "turn": 1,
+          "raw_response": "## 1) Goals & requirements\n**Core**\n- Multiple users edit the same document concurrently with **low latency** (sub-200ms perceived).\n- **Consistency**: all users converge to the same document state.\n- **Offline/poor network**: edits continue locally; sync when reconnected.\n- **Undo/redo**, cursor/selection presence, comments/suggestions, version history.\n\n**Non-functional**\n- Scale to many documents and large docs.\n- Strong authz (ACLs), audit trail, abuse/rate limiting.\n- High availability and graceful reconnect.\n\n---\n\n## 2) Data model\n### Document structure\nRepresent the doc as a tree to avoid \u201cone giant string\u201d bottlenecks:\n- Document = list of **blocks** (paragraphs, headings, tables, etc.)\n- Each block contains **rich-text runs** with attributes (bold, link, etc.)\n\nThis reduces conflict domains and improves performance (edits typically local).\n\n### Change representation\nEdits are sent as **operations** (deltas), not whole document:\n- Insert/delete text in a block at a position\n- Split/merge blocks\n- Apply formatting attributes over a range\n- Structural edits (table cell edits, list indentation)\n\n---\n\n## 3) Concurrency control: OT vs CRDT (choose one)\n### Option A: OT (Operational Transformation)\n- Server sequences operations with a **revision number**.\n- Incoming ops are transformed against concurrent ops the client hasn\u2019t seen.\n- Pros: compact, historically used in Google Docs-like systems.\n- Cons: tricky to implement correctly across rich structures; server is more central.\n\n### Option B: CRDT (Conflict-free Replicated Data Types) \u2014 common modern choice\n- Each edit is a commutative operation with stable IDs (e.g., RGA/list CRDT for text).\n- Clients can apply ops locally immediately; ops can arrive out of order.\n- Pros: excellent for offline-first, simpler convergence reasoning.\n- Cons: metadata overhead; needs compaction/snapshots.\n\n**A solid design today**: use **CRDT for real-time state convergence**, plus a **server relay + persistence layer** (clients are authoritative for local typing latency; server is authoritative for access control, persistence, and fanout).\n\n---\n\n## 4) High-level architecture\n### Client\n- Local CRDT/OT engine (applies edits immediately).\n- Maintains:\n  - Document state\n  - Pending ops queue (not yet acknowledged)\n  - Version/vector metadata\n- Sends ops over WebSocket; receives remote ops and applies them.\n- Periodically creates lightweight state checkpoints (optional).\n\n### Real-time Collaboration Service (stateless or lightly stateful)\n- WebSocket termination and document \u201crooms\u201d.\n- Authenticates user, checks permission to join doc.\n- Broadcasts ops to other participants.\n- Ensures ordering per document stream if using OT; for CRDT, ordering is less strict but you still want monotonic delivery when possible.\n- Tracks **presence** (cursors, selections, active users) in memory with TTL.\n\n### Persistence / Document Service\n- Stores:\n  - **Append-only op log** per document (for replay/audit)\n  - Periodic **snapshots** (for fast load)\n- On open:\n  - Load latest snapshot + replay ops after snapshot.\n- Background compaction:\n  - Merge ops into new snapshot; truncate old ops beyond retention (or keep for full history).\n\n### Pub/Sub backbone (for scale)\n- If many collaboration servers exist, they coordinate via Kafka/NATS/Redis Streams:\n  - Each doc\u2019s ops go to a partition keyed by `docId`.\n  - Servers subscribed to that doc\u2019s stream broadcast to connected clients.\n\n---\n\n## 5) Edit flow (CRDT example)\n1. User types \u2192 client creates CRDT op(s) and applies locally.\n2. Client sends ops with metadata:\n   - `docId`, `clientId`, `opId`, causal info (vector clock / lamport timestamp), payload\n3. Collab service:\n   - Validates permission + basic sanity.\n   - Publishes to doc stream and broadcasts to other connected clients.\n4. Persistence service:\n   - Appends ops to op log.\n   - Optionally acks to client after durable write (or ack on publish + async durability, depending on durability needs).\n5. Other clients receive ops and apply; state converges.\n\n---\n\n## 6) Presence, cursors, and chat-like ephemera\nKeep presence separate from durable document edits:\n- Presence updates at high frequency (e.g., 5\u201320 Hz throttled).\n- Stored in memory (Redis) with TTL; not written to op log.\n- Broadcast via the same WebSocket channel but different message type.\n\n---\n\n## 7) Undo/redo\nUndo is not \u201creverse the last text state\u201d globally; it\u2019s per-user intent.\nCommon approach:\n- Maintain a local undo stack of **user\u2019s own ops**.\n- Undo emits compensating ops (CRDT-friendly) and tags them as undo.\n- For OT, undo requires transforming the inverse op through concurrent ops.\n\n---\n\n## 8) Version history and \u201cnamed versions\u201d\n- Op log is naturally an audit trail.\n- Periodic snapshots + op ranges allow:\n  - \u201cRestore to version\u201d\n  - Diff between versions\n- Store \u201cnamed versions\u201d as pointers to snapshot+offset (or a logical timestamp).\n\n---\n\n## 9) Scaling strategy\n- **Sharding by docId**: consistent hash doc \u2192 collaboration shard.\n- Hot documents:\n  - Keep a single \u201cleader\u201d collab instance per doc to simplify fanout, with replicas as standby.\n  - Or use pub/sub with multiple frontends but a single ordering stream per doc.\n- Backpressure:\n  - Batch ops, compress, coalesce rapid keystrokes.\n  - Enforce max op size / rate limits.\n\n---\n\n## 10) Security & correctness\n- AuthN: OAuth/JWT; AuthZ: doc ACL (owner/editor/viewer/commenter).\n- TLS everywhere; encryption at rest for stored snapshots/logs.\n- Input validation: bounds checks on positions/ranges; schema validation.\n- Abuse prevention: per-user rate limiting, per-doc connection limits.\n- Idempotency: `opId` dedupe to handle retries.\n- Observability: per-doc latency, fanout size, dropped connections, op lag.\n\n---\n\n## 11) Practical implementation notes\n- If building fast: reuse proven CRDT libs (e.g., Yjs/Automerge) and focus on:\n  - Durable op log + snapshotting\n  - Access control + presence\n  - Sharding and pub/sub\n- Use WebSocket for steady low-latency; fall back to long-polling if needed.\n\nAnswer: A Google-Docs-like system can be built with clients generating incremental edit operations (preferably CRDT for offline-first convergence), a WebSocket-based collaboration layer that broadcasts ops within per-document rooms, a durable append-only op log plus periodic snapshots for fast loads and history, and a sharded/pub-sub backend for scale; presence is handled separately as ephemeral state, with strong authz, idempotent ops, compaction, and observability. | Confidence: 82%",
+          "extracted_confidence": 0.82,
+          "extracted_answer": "A Google-Docs-like system can be built with clients generating incremental edit operations (preferably CRDT for offline-first convergence), a WebSocket-based collaboration layer that broadcasts ops within per-document rooms, a durable append-only op log plus periodic snapshots for fast loads and history, and a sharded/pub-sub backend for scale; presence is handled separately as ephemeral state, with strong authz, idempotent ops, compaction, and observability.",
+          "correct": false
+        }
+      ],
+      "cds": null,
+      "ground_truth": ""
+    }
+  ]
+}

@@ -15,11 +15,6 @@ __pycache__/
 dist/
 build/
 
-# Results (optional - comment out if you want to track results)
-results/raw/
-results/metrics/
-results/figures/
-
 # IDE
 .vscode/
 .idea/
